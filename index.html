@@ -6,29 +6,57 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <div class="wraper">
-    <div class="header container">
-    <div class="nav">
-        <img src="./img/logo.svg" alt="img">
-        <ul>
-            <a href="#">Врачу</a>
-            <a href="#">Пациенту</a>
-            <a href="#">О препарате</a>
-            <a href="#">Журнал</a>
-            <a href="#">Контакты</a>
-            <a href="#"></a>
-        </ul>
-        <button type="submit">Проверить оригинальность</button>
-        <button type="submit">Купить</button>
+    <section class="header">
+        <div class="container">
+        <div class="nav">
+        <img class="nav__img" src="./img/logo.svg" alt="img">
+        <div class="nav__list">
+            <a class="nav__link" href="#">Врачу <img src="./img/vector.svg" alt="img"></a>
+            <a class="nav__link" href="#">Пациенту <img src="./img/vector.svg" alt="img"></a>
+            <a class="nav__link" href="#">О препарате <img src="./img/vector.svg" alt="img"></a>
+            <a class="nav__link" href="#">Журнал</a>
+            <a class="nav__link" href="#">Контакты</a>
+            <a class="nav__link" href="#"><img src="./img/search.svg" alt="img"></a>
+        </div>
+        <div class="nav__btn">
+        <button class="nav__original" type="submit">Проверить оригинальность</button>
+        <button class="nav__buy" type="submit">Купить</button>
+        </div>
     </div>
-    <div class="promo">
-        <h1>Путь к богатству и могуществу</h1>
-        <a href="#">О препарате</a>
+        <div class="promo">
+        <h1 class="promo__heading">Путь к богатству<br>и могуществу</h1>
+        <a class="promo__link" href="#">О препарате <img class="promo__img" src="./img/vector_1.svg" alt="img"></a>
     </div>
-    </div>
+        </div>
+    </section>
+    <section class="technology container">
+        <div class="technology__list">
+            <a class="technology__link" href="#">История <img class="technology__img" src="./img/vector_2.svg" alt="img"></a>
+            <a class="technology__link" href="#">Технология производства <img class="technology__img" src="./img/vector_2.svg" alt="img"></a>
+            <a class="technology__link" href="#">Инструкция <img class="technology__img" src="./img/vector_2.svg" alt="img"></a>
+            <a class="technology__link" href="#">Состав препарата <img class="technology__img" src="./img/vector_2.svg" alt="img"></a>
+            <a class="technology__link" href="#">Механизм действия <img class="technology__img" src="./img/vector_2.svg" alt="img"></a>
+            <a class="technology__link" href="#">Рег. удостоверение <img class="technology__img" src="./img/vector_2.svg" alt="img"></a>
+        </div>
+    </section>
+    <section class="medication container">
+        <h2 class="medication__heading">Препарат NZT-48</h2>
+        <p class="medication__text">Действует на клеточном уровне, улучшая метаболизм<br>клеток и восстанавливая их нормальные функции.</p>
+        <p class="medication__text">Благодаря этому достигается широчайший спектр<br>медицинских показаний и становится возможным<br>применение в самых разных областях медицины.</p>
+    </section>
+    <section class="advantages container">
+        <div class="advantages__show">
+            <div class="advantages__card">
+                <h2 class="advantages__heading">Эффективность</h2>
+                <p class="advantages__text">Доказана многочисленными клиническими и лабораторными исследованиями</p>
+            </div>
+        </div>
+
+    </section>
 </div>
 </body>
 </html>

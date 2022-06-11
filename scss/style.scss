@@ -1,20 +1,121 @@
+@font-face {
+  font-family: 'Graphik LCG';
+  src: local('Graphik LCG Regular'), local('Graphik-LCG-Regular'),
+  url('../fonts/GraphikLCG-Regular.woff2') format('woff2'),
+  url('../fonts/GraphikLCG-Regular.woff') format('woff'),
+  url('../fonts/GraphikLCG-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
+}
+body {
+  font-family: 'Graphik LCG', serif;
 }
 .container {
   max-width: 1340px;
   margin: 0 auto;
   }
-.wraper {
-  background-image: url("/img/fone.png");
-  font-size: revert;
-}
 .header {
-
+  background-image: url("../img/fone.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  padding-top: 30px;
+  &__link {
+    font-size: 18px;
+    line-height: 18px;
+    color: #FDFDFD;
+    text-decoration: none;
+    margin-right: 22px;
+    padding-right: 8px;
+  }
+  &__original {
+    outline: none;
+    padding: 14px 20px;
+    border: 2px solid #DF0050;
+    border-radius: 25px;
+    font-size: 18px;
+    line-height: 18px;
+    color: #FFFFFF;
+    background-color: transparent;
+    margin-right: 15px;
+  }
+  &__buy {
+    outline: none;
+    border: none;
+    padding: 14px 20px;
+    border-radius: 25px;
+    font-size: 18px;
+    line-height: 18px;
+    color: #49301D;
+    background-color: #FFFFFF;
+  }
+}
+.promo {
+  margin-top: 160px;
+  padding-bottom: 84px;
+  &__heading {
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 110%;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+  }
+  &__link {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+  &__img {
+    position: relative;
+    left: 15px;
+    top: 2px;
+  }
+}
+.technology {
+  margin-top: 50px;
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__link {
+    text-decoration: none;
+    width: 416px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #DADCE7 ;
+    padding-top: 25px;
+    font-size: 18px;
+    line-height: 18px;
+    color: #252627;
+    margin-bottom: 25px;
+  }
+  &__img {
+  }
+}
+.medication {
+  margin-top: 120px;
+  &__heading {
+    font-size: 40px;
+    line-height: 130%;
+    color: #1E5AAF;
+    margin-bottom: 40px;
+  }
+  &__text {
+    font-size: 24px;
+    line-height: 140%;
+    color: #797A84;
+    margin-bottom: 30px;
+  }
 }
