@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header class="header">
@@ -75,15 +77,29 @@
         <section class="info container">
             <div class="pagination">
                 <div class="pagination__click">
-                    <button class="pagination__btn"><img class="pagination__img" src="./img/up.svg" alt="img"></button>
-                    <button class="pagination__btn"><img class="pagination__img" src="./img/down.svg" alt="img"></button>
+                    <button id="left" class="pagination__btn"><img class="pagination__img" src="./img/up.svg" alt="img"></button>
+                    <button id="right" class="pagination__btn"><img class="pagination__img" src="./img/down.svg" alt="img"></button>
                 </div>
                 <div class="pagination__info">
-                    <div class="pagination__top"></div>
-                    <div class="pagination__bottom">
-                        <h2 class="pagination__heading">Что это за таблетка?! Я был<br>предельно собран. Я не<br>курил уже 6 часов, я не ел.</h2>
-                        <p class="pagination__text">5 апреля</p>
-                        <a class="pagination__link" href="#">О NZT-48 <img src="./img/vector_1.svg" alt="img"></a>
+                    <div>
+                        <div class="pagination__slide">
+                            <div class="pagination__top"></div>
+                            <div class="pagination__bottom">
+                            <h2 class="pagination__heading">Что это за таблетка?! Я был<br>предельно собран. Я не<br>курил уже 6 часов, я не ел.</h2>
+                            <p class="pagination__text">5 апреля</p>
+                            <a class="pagination__link" href="#">О NZT-48 <img src="./img/vector_1.svg" alt="img"></a>
+                        </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="pagination__slide">
+                            <div class="pagination__top"></div>
+                            <div class="pagination__bottom">
+                                <h2 class="pagination__heading">Что это за таблетка?! Я был<br>предельно собран. Я не<br>курил уже 6 часов, я не ел.</h2>
+                                <p class="pagination__text">5 апреля</p>
+                                <a class="pagination__link" href="#">О NZT-48 <img src="./img/vector_1.svg" alt="img"></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -93,22 +109,56 @@
             <div class="carousel">
                 <div class="carousel__click">
                     <div>
-                    <button class="carousel__btn"><img class="pagination__img" src="./img/up.svg" alt="img"></button>
-                    <button class="carousel__btn"><img class="pagination__img" src="./img/down.svg" alt="img"></button>
+                    <button id="cl_left" class="carousel__btn"><img class="pagination__img" src="./img/up.svg" alt="img"></button>
+                    <button id="cl_right" class="carousel__btn"><img class="pagination__img" src="./img/down.svg" alt="img"></button>
                     </div>
                     <a class="carousel__status" href="#">Мнения специалистов</a>
                 </div>
                 <div class="carousel__info">
-                    <div class="carousel__top">
-                        <div>
-                            <h2 class="carousel__name">Эдди<br>морро</h2>
-                            <p class="carousel__prof">Сенатор, заслуженный деятель науки РФ, профессор, доктор<br>медицинских наук, руководитель отдела патоморфологии ФГБНУ<br>«НИИАГиР им. Д.О. Отта», г.Санкт-Петербург</p>
+                    <div>
+                        <div class="carousel__slide">
+                            <div class="carousel__top">
+                                <div>
+                                    <h2 class="carousel__name">Эдди<br>морро</h2>
+                                    <p class="carousel__prof">Сенатор, заслуженный деятель науки РФ, профессор, доктор<br>медицинских наук, руководитель отдела патоморфологии ФГБНУ<br>«НИИАГиР им. Д.О. Отта», г.Санкт-Петербург</p>
+                                </div>
+                                <img class="carousel__ava" src="./img/avatar.png" alt="img">
+                            </div>
+                            <div class="carousel__bottom">
+                                <p class="carousel__text">Правовое государство фактически<br>интегрирует культ личности. Социализм,<br>на первый взгляд, заставляет бесцветный<br>культ личности.</p>
+                                <a class="carousel__link" href="#">Смотреть видео <img src="./img/vector_1.svg" alt="img"></a>
+                            </div>
                         </div>
-                        <img class="carousel__ava" src="./img/avatar.png" alt="img">
                     </div>
-                    <div class="carousel__bottom">
-                        <p class="carousel__text">Правовое государство фактически<br>интегрирует культ личности. Социализм,<br>на первый взгляд, заставляет бесцветный<br>культ личности.</p>
-                        <a class="carousel__link" href="#">Смотреть видео <img src="./img/vector_1.svg" alt="img"></a>
+                    <div>
+                        <div class="carousel__slide">
+                            <div class="carousel__top">
+                                <div>
+                                    <h2 class="carousel__name">Эдди<br>морро</h2>
+                                    <p class="carousel__prof">Сенатор, заслуженный деятель науки РФ, профессор, доктор<br>медицинских наук, руководитель отдела патоморфологии ФГБНУ<br>«НИИАГиР им. Д.О. Отта», г.Санкт-Петербург</p>
+                                </div>
+                                <img class="carousel__ava" src="./img/avatar.png" alt="img">
+                            </div>
+                            <div class="carousel__bottom">
+                                <p class="carousel__text">Правовое государство фактически<br>интегрирует культ личности. Социализм,<br>на первый взгляд, заставляет бесцветный<br>культ личности.</p>
+                                <a class="carousel__link" href="#">Смотреть видео <img src="./img/vector_1.svg" alt="img"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="carousel__slide">
+                            <div class="carousel__top">
+                                <div>
+                                    <h2 class="carousel__name">Эдди<br>морро</h2>
+                                    <p class="carousel__prof">Сенатор, заслуженный деятель науки РФ, профессор, доктор<br>медицинских наук, руководитель отдела патоморфологии ФГБНУ<br>«НИИАГиР им. Д.О. Отта», г.Санкт-Петербург</p>
+                                </div>
+                                <img class="carousel__ava" src="./img/avatar.png" alt="img">
+                            </div>
+                            <div class="carousel__bottom">
+                                <p class="carousel__text">Правовое государство фактически<br>интегрирует культ личности. Социализм,<br>на первый взгляд, заставляет бесцветный<br>культ личности.</p>
+                                <a class="carousel__link" href="#">Смотреть видео <img src="./img/vector_1.svg" alt="img"></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -125,5 +175,8 @@
             </div>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script/main.js"></script>
 </body>
 </html>

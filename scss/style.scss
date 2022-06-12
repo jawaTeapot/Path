@@ -173,7 +173,7 @@ body {
     cursor: pointer;
     margin-right: 50px;
   }
-  &__info {
+  &__slide {
     display: flex;
   }
   &__top {
@@ -204,11 +204,15 @@ body {
     margin-bottom: 40px;
   }
   &__link {
+    display: flex;
     text-decoration: none;
     font-weight: 500;
     font-size: 18px;
     line-height: 18px;
     color: #FDFDFD;
+    img {
+      padding-left: 10px;
+    }
   }
 }
 .opinion {
@@ -241,7 +245,7 @@ body {
     line-height: 18px;
     color: #1E5AAF;
   }
-  &__info {
+  &__slide {
     width: 879px;
     height: 575px;
     background: linear-gradient(180deg, rgba(9, 46, 98, 0.3) 0%, rgba(65, 124, 209, 0.3) 100%), #1E5AAF;
@@ -249,6 +253,13 @@ body {
     border-radius: 5px;
     margin-top: 42px;
     padding: 61px 99px 0 110px ;
+    box-sizing: border-box;
+  }
+  .slick-prev.slick-arrow,.slick-next.slick-arrow {
+    display: none !important;
+  }
+  .slick-list.draggable {
+    padding: 0 30% 0 0 !important;
   }
   &__top {
     display: flex;
