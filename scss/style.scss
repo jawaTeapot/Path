@@ -24,10 +24,17 @@ body {
   background-size: cover;
 }
 .nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  padding-top: 30px;
   height: 100px;
+  position: relative;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__img {
+    fill: #FDFDFD;
+  }
   &__link {
     font-weight: 400;
     font-size: 18px;
@@ -36,6 +43,9 @@ body {
     text-decoration: none;
     margin-right: 22px;
     padding-right: 8px;
+  }
+  &__vector {
+    stroke: #FDFDFD;
   }
   &__original {
     outline: none;
@@ -59,6 +69,47 @@ body {
     color: #49301D;
     background-color: #FFFFFF;
     cursor: pointer;
+  }
+  &--open {
+    background-color: #F5F5F5;
+    .nav__buy {
+      background-color: #0F57BE;
+      color: #FDFDFD;
+    }
+    .nav__img {
+      fill: #1E5AAF;
+      color: #1E5AAF;
+    }
+    .nav__link {
+      color: #252627;
+    }
+    .nav__vector {
+      stroke: #252627;
+    }
+    .nav__original {
+      color: #DF0050;
+    }
+  }
+}
+.menu {
+  position: absolute;
+  height: 251px;
+  background-color: #F5F5F5;
+  left: 0;
+  right: 0;
+  top: 129px;
+  display: none;
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__link {
+    width: 33.333%;
+    font-size: 18px;
+    line-height: 18px;
+    color: #252627;
+    text-decoration: none;
+    padding-top: 50px;
   }
 }
 .promo {
@@ -137,6 +188,11 @@ body {
     box-shadow: 0 0 10px rgba(6, 31, 67, 0.3);
     border-radius: 5px;
     position: relative;
+    transition: all 0.3s;
+    cursor: pointer;
+    &:hover {
+      background: linear-gradient(0deg, rgba(9, 46, 98, 0.3) 0%, rgba(65, 124, 209, 0.3) 100%), #1E5AAF;
+    }
   }
   &__heading {
     padding: 35px 0 15px 35px;
@@ -175,6 +231,12 @@ body {
   }
   &__slide {
     display: flex;
+    &:hover {
+      .pagination__bottom {
+        background: linear-gradient(0deg, rgba(9, 46, 98, 0.3) 0%, rgba(65, 124, 209, 0.3) 100%), #1E5AAF;
+        transition: all 0.3s;
+      }
+    }
   }
   &__top {
     width: 880px;
@@ -254,6 +316,10 @@ body {
     margin-top: 42px;
     padding: 61px 99px 0 110px ;
     box-sizing: border-box;
+    &:hover {
+      background: linear-gradient(0deg, rgba(9, 46, 98, 0.3) 0%, rgba(65, 124, 209, 0.3) 100%), #1E5AAF;
+      transition: all 0.3s;
+    }
   }
   .slick-prev.slick-arrow,.slick-next.slick-arrow {
     display: none !important;
