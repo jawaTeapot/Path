@@ -90,6 +90,9 @@ body {
       color: #DF0050;
     }
   }
+  .vector--open svg {
+    transform: rotate(180deg);
+  }
 }
 .menu {
   position: absolute;
